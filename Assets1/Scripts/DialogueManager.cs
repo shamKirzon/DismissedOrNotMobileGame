@@ -17,7 +17,7 @@ public class DialogueManager : MonoBehaviour
 
     void Awake()
     {
-        // Singleton pattern
+        // singleton pattern
         if (Instance == null)
         {
             Instance = this;

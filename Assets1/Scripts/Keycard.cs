@@ -17,7 +17,7 @@ public class Keycard : MonoBehaviour
 
     void Start()
     {
-        // Store the starting position for bobbing effect
+        // Store the starting position for bobbing effects.
         startPosition = transform.position;
     }
 
@@ -34,7 +34,7 @@ public class Keycard : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         // Check if the player collided with this keycard
-        // Works with CharacterController which uses the root GameObject
+        // Works with characterController which uses the root GameObject
         if (other.CompareTag("Player") || other.GetComponent<CharacterController>() != null)
         {
             // Show dialogue on first keycard
@@ -52,7 +52,7 @@ public class Keycard : MonoBehaviour
                 }
             }
 
-            // Find the CollectionManager and add the keycard
+            // Find the collectionManager and add the keycard
             CollectionManager manager = FindObjectOfType<CollectionManager>();
             if (manager != null)
             {

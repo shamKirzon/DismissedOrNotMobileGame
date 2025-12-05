@@ -27,7 +27,7 @@ public class EnemyGhost : MonoBehaviour
 
     void Start()
     {
-        // Get the NavMeshAgent component
+        // Get the navMeshAgent Component
         agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
 
         // Find the player automatically if not assigned

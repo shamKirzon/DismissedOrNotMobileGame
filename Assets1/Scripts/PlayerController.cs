@@ -12,7 +12,7 @@ public class PlayerController : MonoBehaviour
     public Transform playerCamera;
     public float maxLookAngle = 80f;
 
-    // Private variables
+
     private CharacterController characterController;
     private float verticalVelocity;
     private float cameraVerticalRotation = 0f;

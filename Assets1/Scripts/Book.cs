@@ -22,10 +22,10 @@ public class Book : MonoBehaviour
 
     void Update()
     {
-        //Rotate The Book
+        //rotate the book
         transform.Rotate(Vector3.up, rotationSpeed * Time.deltaTime);
 
-        // Bob Up and Down
+        // bob up and down
         float newY = startPosition.y + Mathf.Sin(Time.time * bobSpeed) * bobHeight;
         transform.position = new Vector3(transform.position.x, newY, transform.position.z);
     }
@@ -34,7 +34,7 @@ public class Book : MonoBehaviour
     {
         if (other.CompareTag("Player") || other.GetComponent<CharacterController>() != null)
         {
-            // Show Dialogue on First Book
+            // Show Dialogue on first book
             if (!firstBookCollected)
             {
                 firstBookCollected = true;
